@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    background-color: #85a3e9;
+    display: inline-flex;
+    color: White;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.title{
+    width: 300px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #00030a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header nav{
+    display: inline-flex;
+    position: relative;
+    margin-left: 55%;
+   
+}
+*{
+    scroll-behavior: smooth;
+    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul{
+    display: inline-flex;
+}
+header nav ul li{
+    padding-left: 15px;
+}
+li img{
+    margin-top: -5px;
+}
+li i{
+    color: #000a0f;
+}
+li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #00030a;
+    font-weight: 100;
+    font-size: 14px;
+}
+main{
+    width: 100%;
+    display: inline-flex;
+}
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    background-color: #00030a;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+.id{
+    position: relative;
+    top: 70px;
+    left: 12px;
+    width: 300px;
+    height: 70px;
+}
+.id h5{
+    color: #71c3f3;
+    font-size: 21px;
+    font-weight: bold;
+}
+.status{
+    display: inline-flex;
+    position: relative;
+    top: 90px;
+    left: 13px;
+}
+.status div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(44, 255, 79);
+    border-radius: 500px;
+    margin-top: 21px;
+    margin-right: 4px;
+}
+.status h6{
+    margin-top: 20px;
+    color: rgb(255, 255, 255) ;
+    /* font-style: italic; */
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details{
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.details span{
+    color: rgb(221, 193, 193);
+}
+.panel{
+    width: 85%;
+    background-color: rgb(206, 206, 206);
+    margin-left: 15%;
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: black;
+}
+.welcome h2{
+    color: black;
+}
+.cards-container{
+    width: max-content;
+    height: max-content;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 1%;
+}
+.card{
+    height: 200px;
+    width: 260px;
+    background-color: #85a3e9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);   
+    backdrop-filter: blur(40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+}
+
+.card a{
+    background-color: #00040e;
+    margin: 30px 0;
+    padding: 10px 20px;
+    width: max-content;
+    border-radius: 5px;
+    text-align: center;
+}
+.card p{
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.card small{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 13px;
+    transform: rotate(1.2deg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.back i{
+    color: rgb(0, 0, 0);
+}
+.back a{
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: #91b2ff;
+    color: #000000;
+    width: max-content;
+    margin-left: 8px;
+    padding: 10px;
+
+}
+
+meter{
+    height: 50px;
+    width: 150px;
+}
+meter ::-webkit-meter-optimum-value{
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background: white;
+    background-size: cover;
+
+}
+meter::-webkit-meter-bar{
+    background-color: #000000;
+    border-radius: 2px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid transparent;
+} 
+meter::-webkit-meter-optimum-value{
+    background: #ffffff;
+}
+meter::-webkit-meter-even-less-good-value{
+    background-color: #2fa4e7;
+}
+meter::-webkit-meter-suboptimum-value{
+    background-color: #2fa4e7;
+}
+
+

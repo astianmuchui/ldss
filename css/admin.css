@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+.items{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header-container{
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+}
+.header-container .title{
+    color: white;
+    font-size: 30px;
+}
+.header-container .title i{
+    color: #2fa4e7;
+    font-size: 35px;
+    transition:  all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-container .title i:hover{
+    transform: rotate(360deg);
+}
+.header-container nav{
+    margin-left: 58%;
+}
+.left-card{
+    padding-top: 50px;
+    margin-left: 120px;
+    margin-top: -600px;
+}
